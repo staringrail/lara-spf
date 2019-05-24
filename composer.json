@@ -1,0 +1,20 @@
+{
+    "name": "railgun1v9/LaraSPF",
+    "description": "Sorting, Pagination and Filtering for Laravel builders and collections utilizing query parameters of the URI.",
+    "type": "package",
+    "keywords": ["laravel", "search", "laravel-search", "filter", "laravel-filter", "pagination", "laravel-pagination", "LaraSPF", "laravel-sort", "laravel-paginate"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "railgun1v9 (Misael Barcelona)",
+            "email": "tempestblaze21@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/config": "5.*",
+        "illuminate/support": "5.*",
+        "illuminate/database": "5.*",
+        "laravel/framework": ">=5.1"
+    }
+}
