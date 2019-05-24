@@ -1,2 +1,2 @@
 # LaraSPF
-Sorting, Pagination and Filtering for Laravel collections and request queries
+Sorting, Pagination and Filtering for Laravel builders and collections utilizing query parameters of the URI.
