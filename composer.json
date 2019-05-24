@@ -1,5 +1,5 @@
 {
-    "name": "railgun1v9/LaraSPF",
+    "name": "railgun1v9/lara-spf",
     "description": "Sorting, Pagination and Filtering for Laravel builders and collections utilizing query parameters of the URI.",
     "type": "package",
     "keywords": ["laravel", "search", "laravel-search", "filter", "laravel-filter", "pagination", "laravel-pagination", "LaraSPF", "laravel-sort", "laravel-paginate"],
