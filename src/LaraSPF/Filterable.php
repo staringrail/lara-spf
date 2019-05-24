@@ -1,6 +1,6 @@
 <?php
 
-namespace App\API\v1\Library;
+namespace LaraSPF;
 
 use App\API\v1\Models\Load;
 use Illuminate\Database\Eloquent\Builder;

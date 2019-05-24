@@ -8,7 +8,7 @@ use Illuminate\Support\Collection;
 
 class LaraSPFServiceProvider extends ServiceProvider
 {
-    use Operators\Filterable;
+    use Filterable;
 
     public function boot()
     {
