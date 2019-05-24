@@ -23,7 +23,7 @@ return [
     "paginate_by_default" => true,
     "page_size" => 100,
 
-    "aditional_keywords" => [
+    "additional_keywords" => [
         "page"
     ],
 

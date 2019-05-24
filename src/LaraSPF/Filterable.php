@@ -48,7 +48,7 @@ trait Filterable{
      */
     private static function _getFilters(Collection $params)
     {
-        $keywords = config("filter.keywords") + config("filter.aditional_keywords");
+        $keywords = config("filter.keywords") + config("filter.additional_keywords");
         return $params->filter(function ($value, $key) use ($keywords){
             return !in_array($key, $keywords);
         })->all();
@@ -237,7 +237,7 @@ trait Filterable{
     {
 
         $input = self::_normalizeArguments($input);
-        $availableKeywords = array_keys(config("filter.keywords") + config("filter.aditional_keywords"));
+        $availableKeywords = array_keys(config("filter.keywords") + config("filter.additional_keywords"));
         $filteredCollection = [];
         
         //Loop through each filter
@@ -294,7 +294,7 @@ trait Filterable{
     {
 
         // Query parameters should only be done for the following keys/keywords
-        $availableKeywords = array_keys(config("filter.keywords") + config("filter.aditional_keywords"));
+        $availableKeywords = array_keys(config("filter.keywords") + config("filter.additional_keywords"));
         $tableKeys = array_keys($builder->get()->first()->toArray());
         $availableKeywords = array_merge($availableKeywords , $tableKeys);
 
@@ -337,9 +337,6 @@ trait Filterable{
         }
 
         $query = $query->get();
-        $query = removeSensitiveLoadData($query);
-        $query = Load::hydrate($query);
-
         return $query;
 
     }
@@ -352,7 +349,7 @@ trait Filterable{
             return $collection;
         }
         // Query parameters should only be done for the following keys/keywords
-        $availableKeywords = array_keys(config("filter.keywords") + config("filter.aditional_keywords"));
+        $availableKeywords = array_keys(config("filter.keywords") + config("filter.additional_keywords"));
         $tableKeys = array_keys($collection->first()->toArray());
         $availableKeywords = array_merge($availableKeywords , $tableKeys);
         $hasFilter = false;
