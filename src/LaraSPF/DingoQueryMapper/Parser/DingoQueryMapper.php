@@ -1,6 +1,6 @@
 <?php
 
-namespace JohannesSchobel\DingoQueryMapper\Parser;
+namespace DingoQueryMapper\Parser;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;

@@ -1,6 +1,6 @@
 <?php
 
-namespace JohannesSchobel\DingoQueryMapper\Parser;
+namespace DingoQueryMapper\Parser;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;

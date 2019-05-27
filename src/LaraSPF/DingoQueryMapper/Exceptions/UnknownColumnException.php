@@ -1,6 +1,6 @@
 <?php
 
-namespace JohannesSchobel\DingoQueryMapper\Exceptions;
+namespace DingoQueryMapper\Exceptions;
 
 use Exception;
 

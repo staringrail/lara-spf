@@ -1,6 +1,6 @@
 <?php
 
-namespace JohannesSchobel\DingoQueryMapper\Operators;
+namespace DingoQueryMapper\Operators;
 
 interface Operations
 {

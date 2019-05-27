@@ -1,6 +1,6 @@
 <?php
 
-namespace JohannesSchobel\DingoQueryMapper\Operators;
+namespace DingoQueryMapper\Operators;
 
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;

@@ -2,7 +2,7 @@
 
 namespace LaraSPF;
 
-use App\API\v1\Models\Load;
+use DingoQueryMapper\DingoQueryMapper;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
@@ -275,6 +275,15 @@ trait Filterable{
                 }
             }
         }
+        return $filteredCollection;
+    }
+
+    private static function paginateCollection($input = null, $collection)
+    {
+        $input = self::_normalizeArguments($input);
+        $qm = new DingoQueryMapper($input);
+        $filteredCollection = $qm->createFromCollection($collection)->paginate();
+
         return $filteredCollection;
     }
 
