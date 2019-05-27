@@ -28,6 +28,10 @@ class LaraSPFServiceProvider extends ServiceProvider
         Collection::macro(config('filter.macros.filterAndGet'), function ($value = null) {
             return Filterable::filterAndGetCollection($value, $this);
         });
+
+        Collection::macro(config('filter.macros.paginate'), function ($value = null) {
+            return Filterable::paginateCollection($value, $this);
+        });
     }
 
     public function register()
