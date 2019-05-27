@@ -278,7 +278,7 @@ trait Filterable{
         return $filteredCollection;
     }
 
-    private static function paginateCollection($input = null, $collection)
+    public static function paginateCollection($input = null, $collection)
     {
         $input = self::_normalizeArguments($input);
         $qm = new DingoQueryMapper($input);
