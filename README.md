@@ -15,7 +15,6 @@ Require package with composer:
 Add `railgun1v9\LaraSPF` to your service providers in `config/app.php`:
 
 ```php
-
 'providers' => [
     railgun1v9\LaraSPF\FilterServiceProvider::class
 ]
