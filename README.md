@@ -10,8 +10,7 @@ Sorting, Pagination and Filtering for Laravel builders and collections utilizing
 
 Require package with composer:
 
-    ```php
-
+    ```
     composer require railgun1v9/lara-spf
     ```
 
