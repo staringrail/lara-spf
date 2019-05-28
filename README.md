@@ -11,7 +11,6 @@ Sorting, Pagination and Filtering for Laravel builders and collections utilizing
 This package uses functionalities from:
 
 [johannesschobel/dingoquerymapper](https://github.com/johannesschobel/dingoquerymapper) - Sort and Paginate functionality
-
 [CamiloManrique/laravel-filter](https://github.com/CamiloManrique/laravel-filter) - Filtering functionality
 
 Both libraries had working functionalities that met my needs. but fell short in terms of security and other needs, but with a little editing and combining the two, I created an all-in-one solution to sorting, pagination and filtering.
