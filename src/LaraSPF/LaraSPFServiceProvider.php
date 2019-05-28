@@ -25,7 +25,7 @@ class LaraSPFServiceProvider extends ServiceProvider
             return Filterable::filterAndGet($value, $this);
         });
 
-        Collection::macro(config('filter.macros.filterAndGet'), function ($value = null) {
+        Collection::macro(config('filter.macros.filter'), function ($value = null) {
             return Filterable::filterAndGetCollection($value, $this);
         });
 

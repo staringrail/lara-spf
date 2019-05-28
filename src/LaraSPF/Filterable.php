@@ -2,7 +2,7 @@
 
 namespace LaraSPF;
 
-use DingoQueryMapper\DingoQueryMapper;
+use DingoQueryMapper\Parser\DingoQueryMapper;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
