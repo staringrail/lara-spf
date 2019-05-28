@@ -9,12 +9,11 @@ Sorting, Pagination and Filtering for Laravel builders and collections utilizing
 ## Installation
 
 Require package with composer:
-
+    
+    ```composer require railgun1v9/lara-spf
     ```
-    composer require railgun1v9/lara-spf
-    ```
 
-Add railgun1v9\LaraSPF to your service providers in config/app.php:
+Add `railgun1v9\LaraSPF` to your service providers in `config/app.php`:
 
 ```php
 
