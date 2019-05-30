@@ -41,24 +41,30 @@ php artisan vendor:publish
 
 ### Sorting
 By default, LaraSPF sorts results by 'id' in ascending order. Below is what the query parameter would look like to do this.
+
 ```/customer?sort=id```
 
 To sort by a different column and in descending order you can prefix the field with a minus sign.
+
 ```/customer?sort=-name```
 
 ### Pagination
 By default, LaraSPF limits results by 15 per page. But you can change the limit in the URI with a 'limit' parameter.
+
 ```/customer?sort=id&limit=25```
 
 To go to the next page of results append a 'page' parameter with the value of what page you want to see.
-```/customer?sort=id&limit=25&page=2``
+
+```/customer?sort=id&limit=25&page=2```
 
 ### Filter
 You can filter results by a key and value as shown below.
+
 ```/customer?name=BOB&sort=id&limit=25```
 Note that this filter is CASE-SENSITIVE.
 
 But you can do a case-insensitve search by appending a /like to the key you are filtering on.
+
 ```/customer?nam/like=bOb&sort=id&limit=25```
 
 
