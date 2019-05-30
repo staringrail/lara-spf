@@ -37,8 +37,43 @@ You can publish the configuration file to change the default settings:
 php artisan vendor:publish
 ```
 
+## Interacting with LaraSPF from the URI
+
+### Sorting
+By default, LaraSPF sorts results by 'id' in ascending order. Below is what the query parameter would look like to do this.
+```/customer?sort=id```
+
+To sort by a different column and in descending order you can prefix the field with a minus sign.
+```/customer?sort=-name```
+
+### Pagination
+By default, LaraSPF limits results by 15 per page. But you can change the limit in the URI with a 'limit' parameter.
+```/customer?sort=id&limit=25```
+
+To go to the next page of results append a 'page' parameter with the value of what page you want to see.
+```/customer?sort=id&limit=25&page=2``
+
+### Filter
+You can filter results by a key and value as shown below.
+```/customer?name=BOB&sort=id&limit=25```
+Note that this filter is CASE-SENSITIVE.
+
+But you can do a case-insensitve search by appending a /like to the key you are filtering on.
+```/customer?nam/like=bOb&sort=id&limit=25```
+
+
 ## Usage
 
+### Using LaraSPF with Collections
+This package adds two macro methods to the Collection class which adds filtering and pagination capabilities
+
+```php
+$customers->filter($request)->paginate($request);
+```
+The paginate method can be chained with the filter method to give sorting and pagination and filtering functionality to the collection.
+
+
+### Using LaraSPF with Builders
 This package add two macro methods to the Builder class which allow to use the filtering methods without any further setup. Both methods can receive an Http Request, a Collection or an array as argument. The two methods are explained below.
 
 > **Note on method names:** The macros method names can be customized on the configuration file, in case there are naming conflicts on the Builder class macros. The default names will be used on the examples.
